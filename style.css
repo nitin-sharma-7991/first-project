@@ -1,0 +1,89 @@
+/* Styling Login Form With Showing password using javascript */
+
+body{
+		background-color: darkcyan;
+		
+	}
+	/*----- Main Box----- */
+	#main{
+		background-color: floralwhite;
+		height: 500px;
+		width: 75%;
+		margin: auto;
+		margin-top: 100px;
+		border-radius: 10px;
+		display: flex;		
+
+	}
+	/*---- Right container---- */
+	#container{
+		height: 500px;
+		width: 60%;
+		border-radius: 5px;
+		/* background-color: red; */
+		
+
+	}
+	/*---- Left Container---- */
+	#logo{
+		width: 40%;
+		height: 500px;
+		height: 80%;
+		margin-top: 50px;
+		
+
+	}
+
+	/*---- Divider---- */
+	hr{
+		margin: auto;
+		width: 3px;
+		height: 450px;
+		background-color: darkcyan;
+		border-radius: 20%;
+	}
+
+	/*---- Form-container---- */
+
+
+
+	#form-container{
+		margin: auto;
+		margin-top: 25px;
+		height: 450px;
+		width: 75%;
+		background-color: red;
+		
+		
+	}
+	
+
+	.form-control{
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		margin-top: 100px;
+		height: 50px;
+		width: 300px;
+		margin-bottom: 20px;
+		color: darkcyan;
+		border-radius: 7px;
+		margin-left: 145px;
+
+	}
+	#btn{
+		margin-left: 145px;
+		width: 300px;
+		height: 50px;
+		border-radius: 7px;
+		background-color: darkcyan;
+		margin-top: 10px;
+	}
+	#form-checkbox{
+		height: 50px;
+		width: 125px;
+		margin-left: 230px;
+		color: darkcyan;
+	
+
+	}
