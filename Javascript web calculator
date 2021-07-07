@@ -1,1 +1,110 @@
+<!-------------------------JAvaScript-------------------------------->
+let screen=document.getElementById('screen');
+buttons= document.querySelectorAll('button');
+let screenValue='';
+for(item of buttons){
+	item.addEventListener('click',(e)=>{
+		buttonText=e.target.innerText;
+		console.log('Button Text is ',buttonText);
+		if(buttonText =='X'){
+			buttonText='*';
+			screenValue +=buttonText;
+			screen.value = screenValue;
+		}
+		else if(buttonText =='C'){
+			screenValue ="";
+			screen.value = screenValue;
+			
+		}
+		else if(buttonText =='='){
+			screen.value=eval(screenValue);
+		}
+		else
+		{
+			screenValue +=buttonText;
+			screen.value = screenValue;
+		}
+	})
+}
 
+
+<----------------------------------HTML---------------------------------->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CALCULATOR|HTML|CSS|JAVASCRIPT</title>
+	<link rel="stylesheet" href="style.css">
+	 <script src="cal.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Calculator</h1>
+
+		<div class="calculator">
+		<input type="text" name="screen" id="screen">
+		<table>
+			<tr>
+			<td><button >(</button></td>
+			<td><button >)</button></td>
+			<td><button >C</button></td>
+			<td><button >%</button></td>
+		</tr>
+
+		<tr>
+			<td><button >7</button></td>
+			<td><button >8</button></td>
+			<td><button >9</button></td>
+			<td><button >X</button></td>
+		</tr>
+		<tr>
+			<td><button >4</button></td>
+			<td><button >5</button></td>
+			<td><button >6</button></td>
+			<td><button >-</button></td>
+		</tr>
+		<tr>
+			<td><button >1</button></td>
+			<td><button >2</button></td>
+			<td><button >3</button></td>
+			<td><button >+</button></td>
+		</tr>
+		<tr>
+			<td><button >0</button></td>
+			<td><button >.</button></td>
+			<td><button >/</button></td>
+			<td><button >=</button></td>
+		</tr>
+		</table>
+	</div>
+	</div>
+	
+</body>
+</html>
+
+<-----------------------------------------CSS--------------------->
+.container{
+	text-align: center;
+	margin-top:5%;
+}
+table{
+	margin: auto;
+}
+input{
+	font-size: 34px;
+	border: 5px solid #2444624;
+	border-radius: 24px;
+}
+button{
+	    font-size: 40px;
+	    border-radius: 20px;
+    background-color: red;
+    width: 102px;
+    height: 58px;
+}
+.calculator{
+	display: inline-block;
+}
